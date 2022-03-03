@@ -237,7 +237,7 @@ body{
 
 
 .container {
-    /* margin-left: 300px; */
+    margin-left: 300px;
     transition: margin-left .2s ease-in;
     padding-left: 50px;
     box-sizing: border-box;
