@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from '../../../../components/Card/card..component';
 import { Container } from './styles';
 import {MdOutlinePeopleAlt} from "react-icons/md"
+import Book from "../../../../assets/books.png"
 import { TransactionHistoryCard } from '../../../../components/TransactionHistoryCard/transactionHistoryCard.component';
 
  const Home=()=>{
@@ -28,6 +29,14 @@ import { TransactionHistoryCard } from '../../../../components/TransactionHistor
       color:"#363D4F"
     },
    ]
+   const transactionHistory =[
+     {
+       img:Book,
+     },
+       {
+       img:Book,
+     },
+   ]
   return (
       <Container>
          <div  className='container1'>
@@ -40,8 +49,12 @@ import { TransactionHistoryCard } from '../../../../components/TransactionHistor
          </div>
          <div className='container2 transaction-Histiory-container' >
            <div className='transaction-history-text'> Transaction History</div>
-
-           <TransactionHistoryCard/>
+           {
+             transactionHistory.map(({img})=>(
+               <TransactionHistoryCard
+                img={img}
+                />
+             ))           }
          </div>
     </Container>
   )

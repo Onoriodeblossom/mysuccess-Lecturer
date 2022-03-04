@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-
+import "../../src/App.css"
 /**
  * @author
  * @function MenuItem
@@ -15,28 +15,22 @@ const MenuItem = (props) => {
       <Link
         exact
         to={to}
-        // onClick={() => {
-        //   setExpand((e) => !e);
-        // }}
         className={`menu-item`}
       >
-        <div className="menu-icon">
+        <div className="items">
+        <div className="">
           {iconClassName}
-          {/* <i class={iconClassName}></i> */}
         </div>
-        <span>{name}</span>
+        <div>{name}</div>
+
+        </div>
       </Link>
-      {/* {subMenus && subMenus.length > 0 ? (
-        <ul className={`sub-menu`}>
-          {subMenus.map((menu, index) => (
-            <li key={index}>
-              <NavLink to={menu.to}>{menu.name}</NavLink>
-            </li>
-          ))}
-        </ul>
-      ) : null} */}
+     
     </li>
   );
 };
 
 export default MenuItem;
+
+
+

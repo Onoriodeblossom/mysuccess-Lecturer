@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Home from "./screens/DashBoard/screens/home/home.screen";
 
 ReactDOM.render(
   <React.StrictMode>

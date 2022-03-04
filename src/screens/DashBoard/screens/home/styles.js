@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   /* background-color: red; */
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   padding:10px;
 
@@ -13,6 +13,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 300px;
     /* background-color:black; */
   }
 
@@ -20,7 +21,7 @@ export const Container = styled.div`
     width: 48%;
     border-radius:10px;
     padding: 20px;
-    background-color:transparent;
+    /* background-color:green; */
     border: 1px solid #C5C5C5 ;
 
 
