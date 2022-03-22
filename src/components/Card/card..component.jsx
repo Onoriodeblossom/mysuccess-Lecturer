@@ -4,10 +4,13 @@ import styled from "styled-components";
 export const Card = ({ background, name, Amount, icon, label }) => {
   return (
     <CardContainer background={background}>
-      <div className="flex">
+      <div className="title">
+
         <div className="icon">{icon}</div>
         <div className="label">{label}</div>
+     
       </div>
+  
       <div>{name}</div>
       <div className="amount">{Amount} NGN</div>
     </CardContainer>
@@ -17,20 +20,27 @@ export const Card = ({ background, name, Amount, icon, label }) => {
 const CardContainer = styled.div`
   background-color: ${(props) =>
     props.background ? props.background : "#0866C6"};
-  width: 42%;
+  width: 40%;
   margin: 20px;
   color: white;
-  padding: 20px 10px;
+  padding: 0px 20px;
   border-radius: 10px;
-  height: auto;
+  /* height: 120px; */
 
-  .flex {
+  .title {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+
+    .icon {
+      justify-content:center ;
+      align-items:center ;
+      display:flex ;
+    }
 
     .label {
       font-weight: 600;
+      width: max-content;
+      height: max-content;
     }
   }
   .amount {

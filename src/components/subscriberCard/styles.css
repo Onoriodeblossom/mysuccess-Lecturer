@@ -1,0 +1,51 @@
+.subscriber-card-container{
+    height:max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+
+}
+
+.img-name{
+    display: flex;
+    align-items: center;
+    width:55%;
+
+
+}
+
+
+.image{
+    border-radius: 50%;
+    height: 70px;
+    margin-left: 40px;
+    width:70px;
+
+}
+
+.name{
+    padding-left: 40px;
+
+}
+.matNo{
+
+    width:38%;
+
+
+}
+.level{
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width:20%;
+    
+    
+}
+.level-text{
+    padding-right: 40px;
+
+}

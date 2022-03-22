@@ -1,0 +1,68 @@
+.subscriber-card-container{
+    height:max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+
+}
+
+.img-name-record{
+    display: flex;
+    align-items: center;
+    width:25%;
+
+}
+
+
+.image{
+    border-radius: 50%;
+    height: 70px;
+    margin-left: 40px;
+    width:70px;
+
+}
+
+.name{
+    padding-left: 40px;
+
+}
+.mat-no{
+
+    width:22%;
+
+
+}
+.level-record{
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width:17%;
+    
+    
+}
+.course{
+    width:23%;
+
+}
+.price{
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    width:8%;
+}
+.time{
+       width:23%;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+.level-text{
+    padding-right: 40px;
+
+}

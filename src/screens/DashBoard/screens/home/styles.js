@@ -21,6 +21,7 @@ export const Container = styled.div`
     width: 48%;
     border-radius:10px;
     padding: 20px;
+    height:max-content ;
     /* background-color:green; */
     border: 1px solid #C5C5C5 ;
 

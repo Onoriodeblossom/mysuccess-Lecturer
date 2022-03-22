@@ -6,6 +6,8 @@ export const TransactionHistoryCard = ({
   purchaserName,
   BookName,
   date,
+  status,
+  amount,
 }) => {
   return (
     <Container>
@@ -13,11 +15,17 @@ export const TransactionHistoryCard = ({
         <img src={img} />
       </div>
       <div className="book-details">
-        <div>{purchaserName}purchases your courses</div>
+        <div className="purchaserName">
+          {purchaserName}
+          <span className="text">purchases your courses</span>
+        </div>
         <div className="book-name">{BookName}</div>
-        <div>{date}</div>
+        <div className="date">{date}</div>
       </div>
-      <div className="amount">ddd</div>
+      <div className="amount">
+        <div className="amount-text">{amount} NGN</div>
+        <div className="status">{status}</div>
+      </div>
     </Container>
   );
 };

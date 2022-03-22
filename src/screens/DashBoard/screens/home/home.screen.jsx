@@ -29,35 +29,110 @@ import { TransactionHistoryCard } from '../../../../components/TransactionHistor
       color:"#363D4F"
     },
    ]
-   const transactionHistory =[
+   const transactionHistory = [
      {
-       img:Book,
+       img: Book,
+       purchaserName: "Primcewill Emeka   ",
+       BookName: "Practical Electronics",
+       date: "10/03/2021",
+       amount: "5000",
+       status: "#C5C5C5",
      },
-       {
-       img:Book,
+     {
+       img: Book,
+       purchaserName: "Primcewill Emeka   ",
+       BookName: "Practical Electronics",
+       date: "10/03/2021",
+       amount: "5000",
+       status: "#C5C5C5",
      },
-   ]
+     {
+       img: Book,
+       purchaserName: "Primcewill Emeka   ",
+       BookName: "Practical Electronics",
+       date: "10/03/2021",
+       amount: "5000",
+       status: "#C5C5C5",
+     },
+     {
+       img: Book,
+       purchaserName: "Primcewill Emeka   ",
+       BookName: "Practical Electronics",
+       date: "10/03/2021",
+       amount: "5000",
+       status: "#C5C5C5",
+     },
+     {
+       img: Book,
+       purchaserName: "Primcewill Emeka   ",
+       BookName: "Practical Electronics",
+       date: "10/03/2021",
+       amount: "5000",
+       status: "#C5C5C5",
+     },
+     {
+       img: Book,
+       purchaserName: "Primcewill Emeka   ",
+       BookName: "Practical Electronics",
+       date: "10/03/2021",
+       amount: "5000",
+       status: "#C5C5C5",
+     },
+     {
+       img: Book,
+       purchaserName: "Primcewill Emeka   ",
+       BookName: "Practical Electronics",
+       date: "10/03/2021",
+       status: "Past Question",
+       amount: "5000",
+     },
+     {
+       img: Book,
+       purchaserName: "Primcewill Emeka   ",
+       BookName: "Practical Electronics",
+       date: "10/03/2021",
+       status: "#C5C5C5",
+       amount: "5000",
+     },
+     {
+       img: Book,
+       purchaserName: "Primcewill Emeka   ",
+       BookName: "Practical Electronics",
+       date: "10/03/2021",
+       amount: "5000",
+       status: "Past Question",
+     },
+   ];
   return (
-      <Container>
-         <div  className='container1'>
-           {
-             card.map(({name,color,icon,number,label,})=>(
-            <Card background={color} icon={icon} label={label} name={name} Amount={number} />
-
-             ))
-           }
-         </div>
-         <div className='container2 transaction-Histiory-container' >
-           <div className='transaction-history-text'> Transaction History</div>
-           {
-             transactionHistory.map(({img})=>(
-               <TransactionHistoryCard
-                img={img}
-                />
-             ))           }
-         </div>
+    <Container>
+      <div className="container1">
+        {card.map(({ name, color, icon, number, label }) => (
+          <Card
+            background={color}
+            icon={icon}
+            label={label}
+            name={name}
+            Amount={number}
+          />
+        ))}
+      </div>
+      <div className="container2 transaction-Histiory-container">
+        <div className="transaction-history-text"> Transaction History</div>
+        {transactionHistory.map(
+          ({ img, purchaserName, BookName, date, amount,status }) => (
+            <TransactionHistoryCard
+              img={img}
+              purchaserName={purchaserName}
+              BookName={BookName}
+              date={date}
+              status={status}
+              amount={amount}
+            />
+          )
+        )}
+      </div>
     </Container>
-  )
+  );
 }
 export default Home;
 
